@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    border: none;
+    font-family: Arial, sans-serif;
+  }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    font-size: 14px;
+    background-image: url("./images/newWoodBackground2.jpg");
+    background-size: 100% 80%;
+    display: block;
+    height: 96vh;
+    padding: 3%;
+    
+  }
+
+  ::backdrop{
+    background-image: url("./images/newWoodBackground2.jpg");
+    background-size: 110% 80%;
+}
+  
+
+@media screen and (orientation:landscape) {
+  .main-buttons,
+  #buttonDiv,
+  #mainButtonDiv,
+  #titleDiv,
+  #imageDiv
+  .brand-buttons,
+  .back-button,
+  #image,
+  #imageDiv,
+  #titleDiv,
+  #imageTitle,
+  #backButtonToMain
+  {
+    display: none;
+  }
+}
+
+
+@media screen and (orientation:portrait) {
+
+  /*
+  #tequilaClassDiv,
+  */
+  #mainButtonDiv,
+  #buttonDiv,
+  #infoContainer,
+  #imageDiv,
+  #titleDiv
+  {
+    width: 95%;
+    height: 84%;
+    border: 4px outset rgb(122, 113, 113);
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: scroll;
+  }
+
+  #mainButtonDiv,
+  #buttonDiv
+  {
+    width: 88%;
+    height: 95%;
+    padding: 2vh;
+  }
+
+  #buttonDiv
+  {
+    height: 84%;
+  }
+
+  #typeTitleDiv{
+    height: 5vh;
+    color: white;
+    text-align: center;
+  }
+
+  #typeTitleDiv > p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vh;
+  }
+
+  #infoContainer{
+    height: 82%;
+    width: 98%;
+    display: inline-block;
+  }
+
+  .main-buttons,
+  .brand-buttons,
+  .back-button,
+  #backButtonToMain
+  {
+    border: 4px outset rgb(122, 113, 113);
+    width: 35vw;
+    height: 15vh;
+    font-size: 2.25vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 4vw auto;
+    justify-content: center;
+  }
+  
+  .main-buttons{
+    width: 80vw;
+    height: auto;
+    margin: .5vh auto .5vh auto;
+  }
+
+  .brand-buttons{
+    width: 80vw;
+    height: 8vh;
+    margin: 5% auto 0 auto;
+  }
+
+  [value~="ClassTequila"]
+  {
+    height: 12%;
+    margin: auto;
+  }
+
+
+  [value~="ClassWhiskey"]
+  {
+    height: 11%;
+    margin: auto;
+  }
+
+  /* if theres fewer buttons */
+  [value~="Vodka"],
+  [value~="Bourbon"],
+  [value~="Canadian"],
+  [value~="Irish"],
+  [value~="Rye"],
+  [value~="Scotch"],
+  [value~="Tennessee"],
+  [value~="FlavoredWhiskey"],
+  [value~="Gin"],
+  [value~="Brandy"],
+  [value~="ClassWine"],
+  [value~="Champagne"],
+  [value~="ClassBeer"],
+  [value~="DraftBeer"],
+  [value~="Jarritos"]
+  {
+    height: auto;
+  }
+
+  #Abasolo,
+  #Draft,
+  #Bottle,
+  [value~="Rose"],
+  [value~="Sparkling"]
+  {
+    margin: auto;
+    height: 15vh;
+  }
+
+  #Draft,
+  #Hennessy{
+    margin: auto 0 3% 0;
+    height: 12%;
+  }
+
+  #Bottle,
+  #LouisXIII{
+    margin: 3% 0 auto 0;
+    height: 12%;
+  }
+
+/*
+  #Bourbon,
+  #Canadian,
+  #Irish,
+  #Mexican,
+  #Rye,
+  #Scotch,
+  #SingleMaltBlended,
+  #Tennessee,
+  #FlavoredWhiskey
+  {
+    height: 7.05vh;
+  }
+*/
+
+  .button-text{
+    margin: auto;
+    height: auto;
+    display: block;
+    justify-content: center
+  }
+
+  #backButtonDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 3% auto;
+    padding: 0;
+    width: 95%;
+  }
+
+  .back-button,
+  #backButtonToMain{
+    width: 100%;
+    margin: 1.5%;
+    height: 8vh;
+  }
+
+  #imageDiv{
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 35%;
+    margin: 0;
+    padding: 0% 0% 3% 0%;
+    /*
+    box-shadow: 0 0 200px rgba(0,0,0,0.5) inset;
+    */
+  }
+
+  #image{
+    margin:  5% auto 0 auto;
+    max-width: 100%;
+    max-height: 90%;
+  }
+
+  #titleDiv{
+    border: 0;
+    box-shadow: inset 0 0 2em .5em #000;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 7vh;
+  }
+
+  #imageTitle{
+    font-weight: 500;
+    color: white;
+    margin: auto;
+    font-size: 3vh;
+    display: block;
+  }
+
+  #infoDiv{
+    /*border: 2px solid red;*/
+    color: white;
+    width: 84%;
+    height: 49.5%;
+    padding: 7% 8%;
+    overflow: scroll;
+  }
+
+  .plus-minus{
+    display: block;
+    float:left;
+  }
+
+  #minusBasicInfo,
+  #minusTastingNotes,
+  #minusSimilarBrands,
+  #minusDescription
+  {
+    display: none;
+  }
+
+  .section-titles{
+    background-color: rgb(0, 0, 0, 0.3);
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    margin: 0 auto 4% auto;
+  }
+
+  
+  .section-info{
+    display: none;
+    font-size: 2vh;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-info > p{
+    margin: 0% auto 10% auto;
+  }
+
+  .similar-brands-info{
+    margin-bottom: 8%;
+  }
+
+  .similar-brands-info > p{
+    margin: 2% auto;
+    text-align: center;
+  }
+  
+}
