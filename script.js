@@ -31,7 +31,9 @@ class BrandInfo{
     ],
      // Similar Brands
     [
-      'Coming Soon...'
+      'Dining Room Stoarge',
+      'Column - 6',
+      'Row - 3'
       /*
       "Don Julio Blanco",
       "Tequila Ocho Blanco",
@@ -1326,11 +1328,11 @@ function openFullscreen() {
       minusSimilarBrands.setAttribute("class", "plus-minus all-info");
       minusSimilarBrands.innerText = "-";
 
-      // "Tasting Notes Section"------------------------------------------------
+      // "Similar Brands Section"------------------------------------------------
       let similarBrandsTitle = document.createElement('h2');
       similarBrandsTitle.setAttribute("id", "similarBrandsTitle");
       similarBrandsTitle.setAttribute("class", "section-titles similar-brands-title all-info");
-      similarBrandsTitle.innerText = "Similar Brands";
+      similarBrandsTitle.innerText = "Location";
       similarBrandsTitle.appendChild(plusSimilarBrands);
       similarBrandsTitle.appendChild(minusSimilarBrands);
       let similarBrandsElement = document.createElement('p');
