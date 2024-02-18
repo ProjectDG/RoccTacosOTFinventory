@@ -1612,6 +1612,8 @@ function openFullscreen() {
       $("#buttonDiv").show();
       openFullscreen();
     }
+
+    let currentForView = "";
     
     // Tequila --------------------------------------------------------------------------------------------------------------
     // Show Tequila Class Buttons
@@ -1635,6 +1637,7 @@ function openFullscreen() {
       $("#tequilaClassBackButton").hide();
       $("#infoContainer").show();
       $("#tequilaBlancoBackButton").show();
+      currentForView = this;
     });
 
     // Show Reposado Tequila Buttons
@@ -1652,6 +1655,7 @@ function openFullscreen() {
       $("#tequilaClassBackButton").hide();
       $("#infoContainer").show();
       $("#tequilaReposadoBackButton").show();
+      currentForView = this;
     });
 
     // Show Anejo Tequila Buttons
@@ -1669,6 +1673,7 @@ function openFullscreen() {
       $("#tequilaClassBackButton").hide();
       $("#infoContainer").show();
       $("#tequilaAnejoBackButton").show();
+      currentForView = this;
     });
 
     // Show Joven Tequila Buttons
@@ -1685,7 +1690,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#tequilaClassBackButton").hide();
       $("#infoContainer").show();
-      $("#tequilaJovenBackButton").show();
+      $("#tequilaJovenBackButton").show();currentForView = this;
     });
 
     // Show Select Reserves Tequila Buttons
@@ -1703,6 +1708,7 @@ function openFullscreen() {
       $("#tequilaClassBackButton").hide();
       $("#infoContainer").show();
       $("#tequilaSelectBackButton").show();
+      currentForView = this;
     });
 
     // Show Mezcal Buttons
@@ -1720,6 +1726,7 @@ function openFullscreen() {
       $("#tequilaClassBackButton").hide();
       $("#infoContainer").show();
       $("#tequilaMezcalBackButton").show();
+      currentForView = this;
     });
 
     // Show Flavored Tequila Buttons
@@ -1736,7 +1743,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#tequilaClassBackButton").hide();
       $("#infoContainer").show();
-      $("#tequilaFlavoredBackButton").show();
+      $("#tequilaFlavoredBackButton").show();currentForView = this;
     });
 
     // Vodka --------------------------------------------------------------------------------------------------------------
@@ -1753,6 +1760,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#vodkaBackButton").show();
+      currentForView = this;
     });
     
   // Whiskey --------------------------------------------------------------------------------------------------------------
@@ -1777,6 +1785,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#bourbonBackButton").show();
+      currentForView = this;
     });
 
     // Show Canadian Buttons
@@ -1794,6 +1803,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#canadianBackButton").show();
+      currentForView = this;
     });
     
     // Show Irish Buttons
@@ -1811,6 +1821,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#irishBackButton").show();
+      currentForView = this;
     });
 
     // Show Mexican Buttons
@@ -1828,6 +1839,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#mexicanBackButton").show();
+      currentForView = this;
     });
 
     // Show Rye Buttons
@@ -1845,6 +1857,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#ryeBackButton").show();
+      currentForView = this;
     });
 
     // Show Scotch Buttons
@@ -1862,6 +1875,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#scotchBackButton").show();
+      currentForView = this;
     });
 
     // Show Single Malt & Blended Buttons
@@ -1879,6 +1893,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#singleMaltBlendedBackButton").show();
+      currentForView = this;
     });
 
     // Show Tennessee Buttons
@@ -1896,6 +1911,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#tennesseeBackButton").show();
+      currentForView = this;
     });
 
     // Show Flavored Whiskey Buttons
@@ -1913,6 +1929,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#flavoredWhiskeyBackButton").show();
+      currentForView = this;
     });
 
     // Rum ------------------------------------------------------------------------------------------------------------
@@ -1929,6 +1946,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#rumBackButton").show();
+      currentForView = this;
     });
 
     // Gin -----------------------------------------------------------------------------------------------------------
@@ -1945,6 +1963,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#ginBackButton").show();
+      currentForView = this;
     });
 
     // Brandy -------------------------------------------------------------------------------------------------------
@@ -1961,6 +1980,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#brandyBackButton").show();
+      currentForView = this;
     });
 
     // Cordials ----------------------------------------------------------------------------------------------------
@@ -1977,6 +1997,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#cordialsBackButton").show();
+      currentForView = this;
     });
 
     // Wine -------------------------------------------------------------------------------------------------------
@@ -2001,6 +2022,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#redBackButton").show();
+      currentForView = this;
     });
 
     // Show White Wine Buttons ----------------------------------------
@@ -2018,6 +2040,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#whiteBackButton").show();
+      currentForView = this;
     });
 
     // Show Rose Wine Buttons -----------------------------------------
@@ -2035,6 +2058,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#roseBackButton").show();
+      currentForView = this;
     });
 
     // Show Sparkling Wine Buttons ------------------------------------
@@ -2052,6 +2076,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#sparklingBackButton").show();
+      currentForView = this;
     });
 
     // Show Champagne Wine Buttons ------------------------------------
@@ -2069,6 +2094,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#champagneBackButton").show();
+      currentForView = this;
     });
 
     // Show Beer Class Buttons -----------------------------------------------------------------------------------
@@ -2092,6 +2118,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#draftBackButton").show();
+      currentForView = this;
   });
 
   // Show Bottle Beer Buttons-----------------------------------------
@@ -2109,6 +2136,7 @@ function openFullscreen() {
     $("#buttonDiv").hide();
     $("#infoContainer").show();
     $("#bottleBackButton").show();
+    currentForView = this;
 });
 
     // Show Bottle Beer Buttons----------------------------------------
@@ -2130,6 +2158,7 @@ function openFullscreen() {
       $("#buttonDiv").hide();
       $("#infoContainer").show();
       $("#jarritosBackButton").show();
+      currentForView = this;
     });
 
 
@@ -2159,6 +2188,12 @@ function openFullscreen() {
       $("#tequilaClassBackButton").show();
       $(".brand-buttons[value|='Blanco'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
+      
     });
 
     // Back Button To Reposado Tequila Brands -----------------------------------------
@@ -2174,6 +2209,11 @@ function openFullscreen() {
       $("#tequilaClassBackButton").show();
       $(".brand-buttons[value|='Reposado'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Anejo Tequila Brands -----------------------------------------
@@ -2189,6 +2229,11 @@ function openFullscreen() {
       $("#tequilaClassBackButton").show();
       $(".brand-buttons[value|='Anejo'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Joven Tequila Brands -----------------------------------------
@@ -2204,6 +2249,11 @@ function openFullscreen() {
       $("#tequilaClassBackButton").show();
       $(".brand-buttons[value|='Joven'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Mezcal Tequila Brands -----------------------------------------
@@ -2219,6 +2269,11 @@ function openFullscreen() {
       $("#tequilaClassBackButton").show();
       $(".brand-buttons[value|='Mezcal'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Flavored Tequila Brands -----------------------------------------
@@ -2234,6 +2289,11 @@ function openFullscreen() {
       $("#tequilaClassBackButton").show();
       $(".brand-buttons[value|='Flavored'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Select Tequila Brands -----------------------------------------
@@ -2249,6 +2309,11 @@ function openFullscreen() {
       $("#tequilaClassBackButton").show();
       $(".brand-buttons[value|='Select'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Vodka Brands ---------------------------------------------------------------------------------------------
@@ -2263,6 +2328,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='Vodka'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Whiskey Classes ------------------------------------------------------------------------------------------
@@ -2275,6 +2345,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='ClassWhiskey'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Bourbon Brands -----------------------------------------
@@ -2290,6 +2365,11 @@ function openFullscreen() {
       $("#whiskeyClassBackButton").show();
       $(".brand-buttons[value|='Bourbon'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Canadian Brands ----------------------------------------
@@ -2305,6 +2385,11 @@ function openFullscreen() {
       $("#whiskeyClassBackButton").show();
       $(".brand-buttons[value|='Canadian'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Irish Brands -------------------------------------------
@@ -2320,6 +2405,11 @@ function openFullscreen() {
       $("#whiskeyClassBackButton").show();
       $(".brand-buttons[value|='Irish'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Mexican Brands -----------------------------------------
@@ -2335,6 +2425,11 @@ function openFullscreen() {
       $("#whiskeyClassBackButton").show();
       $(".brand-buttons[value|='Mexican'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
     
     // Back Button To Rye Brands ---------------------------------------------
@@ -2350,6 +2445,11 @@ function openFullscreen() {
       $("#whiskeyClassBackButton").show();
       $(".brand-buttons[value|='Rye'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Scotch Brands ------------------------------------------
@@ -2365,6 +2465,11 @@ function openFullscreen() {
       $("#whiskeyClassBackButton").show();
       $(".brand-buttons[value|='Scotch'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Tennessee Brands ---------------------------------------
@@ -2380,6 +2485,11 @@ function openFullscreen() {
       $("#whiskeyClassBackButton").show();
       $(".brand-buttons[value|='Tennessee'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Flavored Whiskey Brands --------------------------------
@@ -2395,6 +2505,11 @@ function openFullscreen() {
       $("#whiskeyClassBackButton").show();
       $(".brand-buttons[value|='FlavoredWhiskey'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Rum Brands ----------------------------------------------------------------------------------------------------
@@ -2409,6 +2524,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='Rum'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Gin Brands ----------------------------------------------------------------------------------------------------
@@ -2423,6 +2543,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='Gin'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To brandy Brands -------------------------------------------------------------------------------------------------
@@ -2437,6 +2562,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='Brandy'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Cordials Brands -----------------------------------------------------------------------------------------------
@@ -2451,6 +2581,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='Cordials'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Wine Classes --------------------------------------------------------------------------------------------------
@@ -2463,6 +2598,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='ClassWine'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Red Brands -----------------------------------------
@@ -2478,6 +2618,11 @@ function openFullscreen() {
       $("#wineClassBackButton").show();
       $(".brand-buttons[value|='Red'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To White Brands -----------------------------------------
@@ -2493,6 +2638,11 @@ function openFullscreen() {
       $("#wineClassBackButton").show();
       $(".brand-buttons[value|='White'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Rosé Brands -----------------------------------------
@@ -2508,6 +2658,11 @@ function openFullscreen() {
       $("#wineClassBackButton").show();
       $(".brand-buttons[value|='Rose'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Sparkling Brands -----------------------------------------
@@ -2523,6 +2678,11 @@ function openFullscreen() {
       $("#wineClassBackButton").show();
       $(".brand-buttons[value|='Sparkling'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Champagne Brands -----------------------------------------
@@ -2538,6 +2698,11 @@ function openFullscreen() {
       $("#wineClassBackButton").show();
       $(".brand-buttons[value|='Champagne'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Beer Classes --------------------------------------------------------------------------------------------------
@@ -2550,6 +2715,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='ClassBeer'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Draft Brands -----------------------------------------
@@ -2565,6 +2735,11 @@ function openFullscreen() {
       $("#beerClassBackButton").show();
       $(".brand-buttons[value|='DraftBeer'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Draft Brands -----------------------------------------
@@ -2580,6 +2755,11 @@ function openFullscreen() {
       $("#beerClassBackButton").show();
       $(".brand-buttons[value|='BottleBeer'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
     // Back Button To Jarritos Brands -----------------------------------------------------------------------------------------------
@@ -2594,6 +2774,11 @@ function openFullscreen() {
       $("#buttonDiv").show();
       $(".brand-buttons[value|='Jarritos'").show();
       $("#backButtonToMain").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
 
@@ -2612,6 +2797,11 @@ function openFullscreen() {
       // Show ------------------------------
       $("#mainButtonDiv").show();
       $(".main-buttons").show();
+      currentForView.scrollIntoView({
+        behavior: 'smooth', // 'auto' or 'smooth'
+        block: 'center',    // 'start', 'center', 'end' or 'nearest'
+        inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+      });
     });
 
   }); // End of JQuery Tag
